@@ -1,0 +1,105 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#banner{
+    background-image: linear-gradient(rgba(0,0,0,0.5), #009688), url(pictures/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+#banner img{
+    padding: 12px 0px 0px 120px ;
+}
+.banner-text{
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 5.3rem;
+    font-weight: 600;
+    font-family: banner-text;
+    font-style: italic;
+}
+.banner-text p{
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+.banner-button a{
+    color: white;
+    background-color: #009688;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 12px;
+    margin: 12px 12px 0px 0px;
+}
+.banner-button a:hover{
+    color:  black;
+    background-color: white;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 12px;
+    margin: 12px 12px 0px 0px;
+    transition: 0.5s;
+}
+/* features */
+
+#features{
+    width: 100%;
+}
+.title-text{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.title-text p{
+    margin-top: 50px;
+    font-size: 1.5rem;
+    color: #009688;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.title-text h1{
+    margin-top: 8px;
+    font-size: 3rem;
+    /* font-style: italic;s */
+}
+.feature-box{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto;
+    align-items: center;
+    text-align: center;
+}
+.feature h1{
+    padding-left: 120px;
+    font-size: 3rem;
+    font-weight: 500px;
+}
+
+.feature-image img{
+    width: 500px;
+    height: 600px;
+}
